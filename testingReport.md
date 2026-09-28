@@ -627,10 +627,10 @@ Test case từ 1 tới 12 ban đầu được Gemini AI tạo ra, em đã review
 
 | STT | Tiêu chí (Criteria) | Điểm tối đa | Sinh viên Tự đánh giá |
 | :--- | :--- | :---: | :---: |
-| 1 | Job Market 2026+ (10 jobs x3 pts + AI Impact) | 40 | [Điểm] |
-| 2 | Software Defects 2022-2026 (20 defects) | 20 | [Điểm] |
-| 3 | Physical-product test design (15 TCs + 5 videos) | 25 | [Điểm] |
-| 4 | [AI-02] AI Audit Report (5-section) attached | 8 | [Điểm] |
+| 1 | Job Market 2026+ (10 jobs x3 pts + AI Impact) | 40 | 40 |
+| 2 | Software Defects 2022-2026 (20 defects) | 20 | 20 |
+| 3 | Physical-product test design (15 TCs + 5 videos) | 25 | 25 |
+| 4 | [AI-02] AI Audit Report (5-section) attached | 8 | 4 |
 | 5 | AI Critique 200-300 words + [AI-03] Disclosure attached | 4 | [Điểm] |
 | 6 | [AI-05] Checklist signed + anti-cheat artifacts | 3 | [Điểm] |
 | **Tổng điểm (Total)** | **100** | **[Tổng điểm tự chấm]** |
@@ -639,12 +639,12 @@ Test case từ 1 tới 12 ban đầu được Gemini AI tạo ra, em đã review
 
 ## DANH MỤC PHỤ LỤC (APPENDICES)
 
-### Appendix A: AI Audit Report ([AI-02])
-*(Mỗi lượt prompt/artifact được ghi theo đúng 5 mục tiêu chuẩn)*
+### Appendix A: AI Audit Report
 
-| Prompt + Tool |  AI Output |  Verdict |  Reasoning (ISTQB) | Student Fix |
-| :--- | :--- | :--- | :--- | :--- |
-| Tool: Google Gemini; Prompt: ""| <pre><pre/> | | | |
+| Prompt + Tool |  AI Output |  Verdict |  Reasoning | Student Fix |  
+| :--- | :--- | :--- | :--- | :--- |  
+| Xem "Prompt 1" trong prompt_log.md | Xem "Prompt 1" trong prompt_log.md | Đúng yêu cầu | Response đúng yêu cầu vì prompt nhập vào đã mô tả chi tiết về thiết bị, nên AI không assume về thiểt bị. | |  
+| Xem "Prompt 2" trong prompt_log.md| Xem "Prompt 2" trong prompt_log.md | Có những chỗ bị hallucinate | AI | |
 
 ---
 
@@ -664,9 +664,4 @@ Test case từ 1 tới 12 ban đầu được Gemini AI tạo ra, em đã review
 ---
 
 ### Appendix C: Nhật ký Prompt chi tiết (`prompt_log.md`)
-*(Chi tiết log toàn bộ các đoạn prompt theo thời gian thực được đính kèm cùng tập tin `.zip` nộp bài).*
-```
 
----
-
-Khung file báo cáo `.md` trên đã được thiết lập sẵn cấu trúc chuẩn. Bạn chỉ cần sao chép nội dung vào trình chỉnh sửa, cập nhật thông tin cá nhân và điền nội dung bài làm của mình vào từng section tương ứng!
