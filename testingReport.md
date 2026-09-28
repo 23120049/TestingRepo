@@ -2,7 +2,6 @@
 
 * **Họ và tên:** Nguyễn Thanh Huyền
 * **Mã số sinh viên (MSSV):** 23120049 
-* **Link GitHub Repository (Artifacts):** [Link repo GitHub của bạn]
 
 ---
 
@@ -599,20 +598,9 @@ Tác phong làm việc chuyên nghiệp, có khả năng làm việc độc lậ
 
 ## MỤC ĐÁNH GIÁ & PHÂN TÍCH AI
 
-### G9.1 - ISTQB Mindmap AI Analysis
-* **Ảnh/Sơ đồ Mindmap vai trò QA/QC do AI tạo:**  
-  ![QA/QC Mindmap](path/to/mindmap.png)
-* **3 Lỗi sai/Điểm chưa chính xác trong Mindmap của AI dựa theo chuẩn ISTQB:**
-  1. **Lỗi 1:** [Chi tiết lỗi 1 + Dẫn chứng chuẩn ISTQB]
-  2. **Lỗi 2:** [Chi tiết lỗi 2 + Dẫn chứng chuẩn ISTQB]
-  3. **Lỗi 3:** [Chi tiết lỗi 3 + Dẫn chứng chuẩn ISTQB]
-
----
-
 ### AI Critique (200 - 300 words)
-*(Viết một đoạn văn từ 200-300 từ đánh giá chất lượng của công cụ AI đã sử dụng trong bài HW01. Chỉ ra điểm AI làm sai, thiên vị hoặc thiếu sót. Tại sao AI lại thất bại ở các điểm đó? Bài học kinh nghiệm rút ra khi làm việc/cộng tác với AI là gì?)*
+Trong bài tập này, công cụ AI đã thể hiện khả năng hỗ trợ nhanh, giúp tự động hóa việc khởi tạo bảng test case và tổng hợp nhanh danh sách sự cố phần mềm. Tuy nhiên, em thấy AI vẫn bộc lộ nhiều hạn chế nghiêm trọng. Dễ nhận thấy nhất là AI đã có hiện tượng hallucinate ra các mốc thời gian khi tìm thông tin về các lỗi phần mềm. AI thất bại ở các điểm này là do cơ chế hoạt động của mô hình ngôn ngữ lớn (LLM) bản chất là dự đoán từ tiếp theo dựa trên xác suất thống kê từ dữ liệu huấn luyện, thay vì thực sự hiểu ngữ cảnh. Bài học kinh nghiệm quan trọng nhất rút ra khi làm việc với AI là không bao giờ coi output của AI là sản phẩm cuối cùng. Người dùng cần giữ vai trò là "người kiểm duyệt", liên tục thực hiện prompt engineering để làm rõ yêu cầu, đồng thời bắt buộc phải kiểm chứng độc lập (fact-check) mọi thông tin do AI tạo ra trước khi đưa vào sử dụng thực tế.
 
-[Nhập đoạn văn AI Critique của bạn tại đây]
 
 ---
 
@@ -644,22 +632,15 @@ Test case từ 1 tới 12 ban đầu được Gemini AI tạo ra, em đã review
 | Prompt + Tool |  AI Output |  Verdict |  Reasoning | Student Fix |  
 | :--- | :--- | :--- | :--- | :--- |  
 | Xem "Prompt 1" trong prompt_log.md | Xem "Prompt 1" trong prompt_log.md | Đúng yêu cầu | Response đúng yêu cầu vì prompt nhập vào đã mô tả chi tiết về thiết bị, nên AI không assume về thiểt bị. | |  
-| Xem "Prompt 2" trong prompt_log.md| Xem "Prompt 2" trong prompt_log.md | Có những chỗ bị hallucinate | AI | |
+| Xem "Prompt 2" trong prompt_log.md| Xem "Prompt 2" trong prompt_log.md | Có những chỗ bị hallucinate | Vì LLM bản chất là dự đoán từ tiếp theo dựa trên xác suất thống kê | Em đã dựa vào các thông tin trên mạng để sửa lại các mô tả và mốc thời gian của các sự cố bị mô tả sai |
 
----
-
-#### Tổng kết Tỷ lệ Chính xác của AI (AI Accuracy Ratio Summary)
-* **VALID:** [XX]%
-* **INVALID:** [YY]%
-* **INCOMPLETE:** [ZZ]%
-* **Kết luận:** [Đưa ra kết luận: BỐI CẢNH NÀO NÊN và KHÔNG NÊN sử dụng AI trong bài tập/công việc này]
 
 ---
 
 ### Appendix B: Mẫu biểu Đính kèm (AI Templates Folder)
-* [x] **[AI-02] AI Audit Report** (Đã tích hợp ở Phụ lục A)
-* [x] **[AI-03] AI Disclosure Form** (Đã ký và hoàn thành)
-* [x] **[AI-05] Privacy & Responsible Use Checklist** (Đã ký và hoàn thành)
+* [x] **[AI-02] AI Audit Report** 
+* [x] **[AI-03] AI Disclosure Form** 
+* [x] **[AI-05] Privacy & Responsible Use Checklist** 
 
 ---
 
